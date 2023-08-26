@@ -11,7 +11,7 @@ const CompletePage = ({ win, movements, partners }) => {
           <div className="complete-page-content">
             {win && (
               <h2 className="complate-page-title">
-                ¡Felicidades! Completaste {partners + 1} parejas en {movements}
+                ¡Felicidades! Completaste {partners + 1} parejas en {movements}{" "}
                 movimientos.
               </h2>
             )}

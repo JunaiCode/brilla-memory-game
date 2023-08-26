@@ -50,35 +50,35 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
     const cards = [
       {
         value: 1,
-        reverseImage: "https://picsum.photos/100/100",
+        reverseImage: "./images/1.png",
       },
       {
         value: 2,
-        reverseImage: "https://picsum.photos/110/110",
+        reverseImage: "./images/2.png",
       },
       {
         value: 3,
-        reverseImage: "https://picsum.photos/120/120",
+        reverseImage: "./images/3.png",
       },
       {
         value: 4,
-        reverseImage: "https://picsum.photos/130/130",
+        reverseImage: "./images/4.png",
       },
       {
         value: 5,
-        reverseImage: "https://picsum.photos/135/135",
+        reverseImage: "./images/5.png",
       },
       {
         value: 6,
-        reverseImage: "https://picsum.photos/125/125",
+        reverseImage: "./images/6.png",
       },
       {
         value: 7,
-        reverseImage: "https://picsum.photos/115/115",
+        reverseImage: "./images/7.png",
       },
       {
         value: 8,
-        reverseImage: "https://picsum.photos/140/140",
+        reverseImage: "./images/8.png",
       },
     ];
     // duplicar el array
