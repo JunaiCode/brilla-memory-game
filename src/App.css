@@ -108,6 +108,7 @@
   margin: 0;
   padding: 0;
   display: inline-block;
+  color: #282c34;
   border: yellow 0.25rem solid;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -118,6 +119,7 @@
   height: 2rem;
   border-radius: 0.25rem;
   background-color: yellow;
+  color: #282c34;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -152,6 +154,7 @@
   cursor: pointer;
   padding: 1rem;
   background-color: yellow;
+  color: #282c34;
   border-radius: 0.25rem;
   font-weight: bold;
   text-decoration: none;
@@ -190,7 +193,7 @@
 
 .hero-image-title,
 .complete-page-title {
-  color: black;
+  color: #282c34;
   font-size: 7.5vw;
   margin-bottom: 1rem;
 }
