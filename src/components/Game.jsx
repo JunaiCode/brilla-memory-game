@@ -139,7 +139,9 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
 
   return (
     <div>
-      <nav className="nav-brilla">Brilla LOGO</nav>
+      <nav className="nav-brilla">
+        <img src="./images/logo.png" alt="logo" />
+      </nav>
       <h1>
         ¡Arma {necesaryPartners} parejas en menos de {necesaryMovements}{" "}
         movimientos y gana!
