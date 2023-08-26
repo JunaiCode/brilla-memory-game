@@ -113,7 +113,7 @@
   font-weight: bold;
 }
 
-.stats > button {
+.restart-button {
   width: 6rem;
   height: 2rem;
   border-radius: 0.25rem;
@@ -121,6 +121,7 @@
   border: none;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .nav-brilla {
@@ -153,6 +154,7 @@
   background-color: yellow;
   border-radius: 0.25rem;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .play-button:hover {
