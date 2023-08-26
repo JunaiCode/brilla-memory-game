@@ -109,7 +109,7 @@
   padding: 0;
   display: inline-block;
   color: #282c34;
-  border: yellow 0.25rem solid;
+  border: #f5ba00 0.25rem solid;
   border-radius: 0.25rem;
   font-weight: bold;
 }
@@ -118,7 +118,7 @@
   width: 6rem;
   height: 2rem;
   border-radius: 0.25rem;
-  background-color: yellow;
+  background-color: #f5ba00;
   color: #282c34;
   border: none;
   cursor: pointer;
@@ -130,7 +130,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: yellow;
+  background-color: #f5ba00;
   width: 100%;
   height: 3rem;
   text-align: center;
@@ -159,7 +159,7 @@
   margin: 0 auto;
   cursor: pointer;
   padding: 1rem;
-  background-color: yellow;
+  background-color: #f5ba00;
   color: #282c34;
   border-radius: 0.25rem;
   font-weight: bold;
