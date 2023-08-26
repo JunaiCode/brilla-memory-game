@@ -1,10 +1,10 @@
 import { useRef } from "react";
 
-const Card = ({ value, changeValues, defaultImage }) => {
+const Card = ({ value, changeValues, defaultImage, reverseImage }) => {
   let refImage = useRef(null);
   let refButton = useRef(null);
   const handleClick = () => {
-    changeValues(value, refButton.current, refImage.current);
+    changeValues(value, refButton.current, refImage.current, reverseImage);
   };
 
   return (

@@ -10,16 +10,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   const defaultImage = "./images/brilla.jpg";
   const necesaryMovements = 16;
   const necesaryPartners = 3;
-  const [cards, setCards] = useState([
-    {
-      value: 1,
-      reverseImage: "https://picsum.photos/100/100",
-    },
-    {
-      value: 2,
-      reverseImage: "https://picsum.photos/100/100",
-    },
-  ]);
+  const [cards, setCards] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -45,9 +36,9 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
     setPreviousValue(null);
   };
 
-  const changeValues = (value, card, image) => {
+  const changeValues = (value, card, image, reverseImage) => {
     disabledCard(card);
-    validateImage(image);
+    validateImage(image, reverseImage);
     if (previousValue == null) {
       setPreviousValue(value);
     } else {
@@ -56,19 +47,43 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   };
 
   const generateRandomCards = () => {
-    const cards = [];
-    //Generar 8 pares de cartas
-    for (let i = 0; i < 8; i++) {
-      const card = {
-        value: i,
-        image: defaultImage,
-        reverseImage: "https://picsum.photos/200/300",
-      };
-      //Agregar el par de cartas al arreglo
-      cards.push(card);
-      cards.push({ ...card });
-    }
-    setCards(shuffle(cards));
+    const cards = [
+      {
+        value: 1,
+        reverseImage: "https://picsum.photos/100/100",
+      },
+      {
+        value: 2,
+        reverseImage: "https://picsum.photos/110/110",
+      },
+      {
+        value: 3,
+        reverseImage: "https://picsum.photos/120/120",
+      },
+      {
+        value: 4,
+        reverseImage: "https://picsum.photos/130/130",
+      },
+      {
+        value: 5,
+        reverseImage: "https://picsum.photos/135/135",
+      },
+      {
+        value: 6,
+        reverseImage: "https://picsum.photos/125/125",
+      },
+      {
+        value: 7,
+        reverseImage: "https://picsum.photos/115/115",
+      },
+      {
+        value: 8,
+        reverseImage: "https://picsum.photos/140/140",
+      },
+    ];
+    // duplicar el array
+    const pairs = [...cards, ...cards];
+    setCards(shuffle(pairs));
   };
 
   const shuffle = (array) => {
@@ -95,8 +110,8 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
     card.disabled = true;
   };
 
-  const validateImage = (image) => {
-    image.src = "https://picsum.photos/100/100";
+  const validateImage = (image, reversImage) => {
+    image.src = reversImage;
     if (previousImage == null) {
       setPreviousImage(image);
     }
