@@ -8,6 +8,8 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   const [previousCard, setPreviousCard] = useState(null);
   const [previousImage, setPreviousImage] = useState(null);
   const defaultImage = "./images/brilla.jpg";
+  const necesaryMovements = 16;
+  const necesaryPartners = 3;
   const [cards, setCards] = useState([
     {
       value: 1,
@@ -109,11 +111,11 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   };
 
   const validateWin = () => {
-    if (movements < 16 && partners >= 3) {
+    if (movements < necesaryMovements && partners === necesaryPartners - 1) {
       setWin(true);
       navigate("/completegame");
     } else {
-      if (movements >= 15) {
+      if (movements >= necesaryMovements - 1) {
         navigate("/completegame");
       }
     }
@@ -122,7 +124,10 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   return (
     <div>
       <nav className="nav-brilla">Brilla LOGO</nav>
-      <h1>¡Arma 3 parejas en menos de 16 movimientos y gana!</h1>
+      <h1>
+        ¡Arma {necesaryPartners} parejas en menos de {necesaryMovements}{" "}
+        movimientos y gana!
+      </h1>
       <Stats movements={movements} partners={partners} />
       <Square
         cards={cards}
