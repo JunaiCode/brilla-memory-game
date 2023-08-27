@@ -1,7 +1,15 @@
 import { useNavigate } from "react-router-dom";
-const CompletePage = ({ win, movements, partners }) => {
+const CompletePage = ({
+  win,
+  movements,
+  partners,
+  setMovements,
+  setPartners,
+}) => {
   const navigate = useNavigate();
   const navigateToHome = () => {
+    setMovements(0);
+    setPartners(0);
     navigate("/");
   };
   return (

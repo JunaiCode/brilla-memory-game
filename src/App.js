@@ -33,6 +33,8 @@ function App() {
                 win={win}
                 movements={movements}
                 partners={partners}
+                setMovements={setMovements}
+                setPartners={setPartners}
               />
             }
           />
