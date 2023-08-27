@@ -18,6 +18,11 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    validateWin();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [partners, movements]);
+
   const confirmMovement = (value, card, image) => {
     setMovements((prev) => prev + 1);
     if (value === previousValue) {
@@ -30,7 +35,6 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
         image.src = defaultImage;
       }, 1000);
     }
-    validateWin();
     setPreviousCard(null);
     setPreviousImage(null);
     setPreviousValue(null);
@@ -126,7 +130,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   };
 
   const validateWin = () => {
-    if (movements < necesaryMovements && partners === necesaryPartners - 1) {
+    if (movements < necesaryMovements && partners === necesaryPartners) {
       setWin(true);
       navigate("/completegame");
     } else {
