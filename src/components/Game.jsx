@@ -136,7 +136,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
       setWin(true);
       navigate("/completegame");
     } else {
-      if (movements >= necesaryMovements - 1) {
+      if (movements >= necesaryMovements) {
         setWin(false);
         navigate("/completegame");
       }
