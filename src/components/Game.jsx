@@ -130,6 +130,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   };
 
   const validateWin = () => {
+    if (partners === 0 && movements === 0) return;
     if (movements < necesaryMovements && partners === necesaryPartners) {
       setWin(true);
       navigate("/completegame");
