@@ -32,6 +32,8 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
         previousCard.disabled = false;
         card.disabled = false;
         previousImage.src = defaultImage;
+        card.style = "border: none;";
+        previousCard.style = "border: none;";
         image.src = defaultImage;
       }, 1000);
     }
@@ -41,6 +43,8 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   };
 
   const changeValues = (value, card, image, reverseImage) => {
+    console.log(card);
+    card.style = "border: 2px solid #FFD700;";
     disabledCard(card);
     validateImage(image, reverseImage);
     if (previousValue == null) {
@@ -146,6 +150,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   return (
     <div>
       <nav className="nav-brilla">
+        <img src="" alt="BotonPago" />
         <img src="./images/logo.png" alt="logo" />
       </nav>
       <h1>

@@ -15,6 +15,7 @@ const Home = () => {
             </button>
           </div>
         </aside>
+          <img src="images/corner.png" className="corner" alt="corner" />
       </article>
     </div>
   );
