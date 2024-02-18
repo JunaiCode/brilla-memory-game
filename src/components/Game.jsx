@@ -7,7 +7,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   const [previousValue, setPreviousValue] = useState(null); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   const [previousCard, setPreviousCard] = useState(null);
   const [previousImage, setPreviousImage] = useState(null);
-  const defaultImage = "./images/brilla.jpg";
+  const defaultImage = "./images/brilla.svg";
   const necesaryMovements = 16;
   const necesaryPartners = 3;
   const [cards, setCards] = useState([]);
@@ -43,8 +43,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   };
 
   const changeValues = (value, card, image, reverseImage) => {
-    console.log(card);
-    card.style = "border: 2px solid #FFD700;";
+    card.style = "background-color: transparent; border: 2px solid #FFD700;";
     disabledCard(card);
     validateImage(image, reverseImage);
     if (previousValue == null) {

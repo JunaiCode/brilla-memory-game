@@ -9,6 +9,7 @@ const Home = () => {
       <article className="hero-image">
         <aside className="hero-image-opacity">
           <div className="hero-image-content">
+            <img src="images/btn-pago.png" className="btn-pago" alt="logo" />
             <h2 className="hero-image-title">Bienvenid@s</h2>
             <button onClick={navigateToGame} className="play-button">
               Jugar
