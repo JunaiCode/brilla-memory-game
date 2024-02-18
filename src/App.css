@@ -173,6 +173,7 @@
   border-radius: 0.25rem;
   font-weight: bold;
   text-decoration: none;
+  z-index: 200000 !important;
 }
 
 .play-button:hover {
