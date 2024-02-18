@@ -191,13 +191,14 @@
 }
 
 .corner {
-  position: absolute; /* Cambiado a posición fija para mantenerlo fijo en la pantalla */
+  position: fixed; /* Cambiado a posición fija para mantenerlo fijo en la pantalla */
   bottom: 0;
   right: 0;
   max-width: 60vw; /* Usamos 'max-width' para que se ajuste a la mitad del ancho de la pantalla máximo */
   height: auto; /* Permitimos que la altura se ajuste automáticamente */
   max-height: 40vh; /* Limitamos la altura máxima para que no sea demasiado grande */
   box-sizing: border-box; /* Asegura que el relleno no afecte el tamaño total */
+  z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
 }
 
 .btn-pago {
