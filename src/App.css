@@ -191,7 +191,7 @@
 }
 
 .corner {
-  position: fixed; /* Cambiado a posición fija para mantenerlo fijo en la pantalla */
+  position: absolute;
   bottom: 0;
   right: 0;
   max-width: 60vw; /* Usamos 'max-width' para que se ajuste a la mitad del ancho de la pantalla máximo */
