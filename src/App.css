@@ -95,7 +95,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 .stats {
@@ -133,14 +133,21 @@
   align-items: center;
   background-color: #f5ba00;
   width: 100%;
-  height: 5rem;
+  height: 8rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
 .nav-brilla > img {
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.logo-nav-bar {
+  background-color: #e0112d;
+  border-radius: 50%;
+  width: 8rem;
+  height: 100%;
 }
 
 .card > img:hover {

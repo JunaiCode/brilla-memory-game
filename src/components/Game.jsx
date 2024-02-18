@@ -74,7 +74,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
       },
       {
         value: 5,
-        reverseImage: "./images/5.png",
+        reverseImage: "./images/5.jpg",
       },
       {
         value: 6,
@@ -150,8 +150,8 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
   return (
     <div>
       <nav className="nav-brilla">
-        <img src="" alt="BotonPago" />
-        <img src="./images/logo.png" alt="logo" />
+        <img src="" className="btnpago-nav-bar" alt="BotonPago" />
+        <img className="logo-nav-bar"src="./images/logo.svg" alt="logo" />
       </nav>
       <h1>
         ¡Arma {necesaryPartners} parejas en menos de {necesaryMovements}{" "}
