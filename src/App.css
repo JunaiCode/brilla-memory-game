@@ -176,6 +176,11 @@
   z-index: 200000;
 }
 
+.hero-image-content{
+  margin-top: 0;
+  margin-bottom: 8rem;
+}
+
 .play-button:hover {
   opacity: 0.5;
 }
