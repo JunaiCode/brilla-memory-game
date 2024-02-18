@@ -173,7 +173,7 @@
   border-radius: 0.25rem;
   font-weight: bold;
   text-decoration: none;
-  z-index: 200000 !important;
+  z-index: 200000;
 }
 
 .play-button:hover {
@@ -190,12 +190,14 @@
   ;
 }
 
-.corner{
-  position: absolute;
+.corner {
+  position: absolute; /* Cambiado a posición fija para mantenerlo fijo en la pantalla */
   bottom: 0;
   right: 0;
-  width: 250px;
-  height: 250px;
+  max-width: 60vw; /* Usamos 'max-width' para que se ajuste a la mitad del ancho de la pantalla máximo */
+  height: auto; /* Permitimos que la altura se ajuste automáticamente */
+  max-height: 40vh; /* Limitamos la altura máxima para que no sea demasiado grande */
+  box-sizing: border-box; /* Asegura que el relleno no afecte el tamaño total */
 }
 
 .btn-pago {
