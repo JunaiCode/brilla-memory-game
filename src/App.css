@@ -210,8 +210,25 @@
   width: 50%;
   margin-bottom: 0;
   margin-top: 0;
+  background-color: #f5ba00;
+  padding: 4rem;
 }
 
+.btnpago-nav-bar {
+  width: 12rem;
+  height: 100%;
+}
+
+/* Media query para ajustar el tamaño de los elementos en pantallas pequeñas */
+@media (max-width: 420px) {
+  .logo-nav-bar {
+    width: 30%; /* Ajustar el ancho a un valor porcentual */
+  }
+  
+  .btnpago-nav-bar {
+    min-width:9rem; /* Reducir el ancho mínimo */
+  }
+}
 
 .hero-image-opacity,
 .complete-page-opacity {
