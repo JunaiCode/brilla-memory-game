@@ -1,54 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .card {
-  width: 20vw; /* Utiliza el 20% del ancho de la ventana */
-  height: 20vw; /* Utiliza el 20% del ancho de la ventana */
-  max-width: 200px; /* Establece un máximo de 200px para la anchura */
-  max-height: 200px; /* Establece un máximo de 200px para la altura */
   background-color: #e0112d;
   cursor: pointer;
   z-index: 1;
-  margin-bottom: 2vw;
   border: none;
   margin: 1vw;
- 
+}
+
+.title{
+  margin: 1rem;
 }
 
 .image-card {
@@ -58,6 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
 .flex {
@@ -78,19 +48,12 @@
   justify-items: center;
   align-items: center;
   align-content: center;
-  width: 100%;
-  margin: 2rem auto;
+  width: 50%;
+  margin: 1rem auto;
+  gap: 0;
 }
 
-@media screen and (min-width: 1024px) {
-  .square {
-    width: 25%;
-  }
-}
 
-.square > div {
-  width: 100%;
-}
 
 .card > img {
   width: 100%;
@@ -213,9 +176,12 @@
 }
 
 .btnpago-nav-bar {
-  width: 12rem;
+  width: 30vw;
   height: 100%;
 }
+
+
+
 
 /* Media query para ajustar el tamaño de los elementos en pantallas pequeñas */
 @media (max-width: 420px) {
@@ -225,6 +191,15 @@
   
   .btnpago-nav-bar {
     min-width:9rem; /* Reducir el ancho mínimo */
+  }
+}
+
+@media  (max-width: 355px){
+  .logo-nav-bar {
+    display: none;
+  }
+  .stats{
+    width: 90%;
   }
 }
 
@@ -244,4 +219,54 @@
   font-size: 7.5vw;
   margin-bottom: 1rem;
   margin-top: 0;
+}
+
+
+@media screen and (min-height: 280px) and (min-width: 280px){
+  .card {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (min-height: 320px) and (min-width: 568px){
+  .card {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (min-height: 420px) and (min-width: 568px){
+  .card {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  .card {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media screen and (min-height: 1024px) and  (min-width: 1366px){
+  .card {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-height: 1366px) and (min-width: 1440px){
+  .card {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media screen and (min-height: 1440px) and (min-width: 2560px){
+  .card {
+    width: 12rem;
+    height: 12rem;
+  }
 }

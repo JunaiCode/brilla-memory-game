@@ -152,7 +152,7 @@ const Game = ({ movements, setMovements, partners, setPartners, setWin }) => {
         <img src="/images/btn-pago.png" className="btnpago-nav-bar" alt="BotonPago" />
         <img className="logo-nav-bar"src="./images/logo.svg" alt="logo" />
       </nav>
-      <h1>
+      <h1 className="title">
         ¡Arma {necesaryPartners} parejas en menos de {necesaryMovements}{" "}
         movimientos y gana!
       </h1>
